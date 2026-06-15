@@ -23,18 +23,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    LangGraph StateGraph                          │
-│                                                                  │
-│   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
-│   │   Agent 1   │───▶│   Agent 2   │───▶│   Agent 3   │        │
-│   │             │    │             │    │             │        │
-│   │  🔍 Search  │    │  🧠 Summar  │    │  📚 Cite    │        │
-│   │  DuckDuckGo │    │  Claude API │    │  APA Format │        │
-│   └─────────────┘    └─────────────┘    └─────────────┘        │
-│          │                  │                  │                 │
-│          ▼                  ▼                  ▼                 │
+│                    LangGraph StateGraph                         │
+│                                                                 │
+│   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐         │
+│   │   Agent 1   │───▶│   Agent 2   │───▶│   Agent 3   │         │
+│   │             │    │             │    │             │         │
+│   │  🔍 Search  │    │  🧠 Summar  │    │  📚 Cite    │         │
+│   │  DuckDuckGo │    │  Claude API │    │  APA Format │         │
+│   └─────────────┘    └─────────────┘    └─────────────┘         │
+│          │                  │                  │                │
+│          ▼                  ▼                  ▼                │
 │   search_results       summary{}          citations[]           │
-│                                                                  │
+│                                                                 │
 │                    ┌─────────────┐                              │
 │                    │  Compile    │                              │
 │                    │  Report     │                              │
@@ -44,7 +44,7 @@
           ▼
 ┌─────────────────┐          ┌──────────────────────┐
 │  FastAPI        │◀────────▶│  React + Vite        │
-│  POST /research │          │  Dark-theme UI        │
+│  POST /research │          │  Dark-theme UI       │
 │  :8000          │          │  :5173               │
 └─────────────────┘          └──────────────────────┘
 ```
